@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -13,9 +14,54 @@ body {
   align-items: center;
 }
 
+
+#wrapper {
+  min-width: 370px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  /* Remove a barra de rolagem no Firefox */
+  -ms-overflow-style: none;
+  /* Remove a barra de rolagem no IE e Edge antigo */
+}
+
+#information {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 188px;
+  width: 701px;
+  text-wrap: auto;
+}
+
+#information h1 {
+  padding-left: 4px;
+}
+
+#boxInformation {
+  display: flex !important;
+  flex-direction: row;
+  width: 100%;
+}
+
+h2 {
+  width: 100%;
+  background-color: #d9d9d9;
+  font-size: 36px;
+  padding: 3px;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+  /* Remove a barra de rolagem no Chrome, Safari e Edge baseado no Chromium */
+}
+
 table {
   border-collapse: collapse;
-  /* width: 100%; */
+  width: 100%;
+  max-width: 100%;
+  min-width: 800px;
+  overflow-x: auto;
 }
 
 td {
@@ -25,8 +71,30 @@ td {
   text-overflow: ellipse;
 }
 
-.coluna,
-.elemento {
+.moreInformation {
+  display: flex;
+  /* gap: 13px; */
+}
+
+.moreInformation span {
+  display: inline;
+}
+
+.h2name {
+  color: white;
+}
+
+.tableInformation {
+  min-width: 602px;
+  height: 91px;
+  background-color: #e6e6e6;
+}
+
+.tableInformation td {
+  width: 50%;
+}
+
+.coluna {
   /* background-color: green; */
   width: 72px;
 }
@@ -48,4 +116,9 @@ span {
 
 .num089 {
   background-color: #D49BCD;
+}
+
+input[type="color"] {
+  border: none;
+  outline: none;
 }
