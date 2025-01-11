@@ -1,4 +1,4 @@
-import { coresPorGrupo, colorsExternal } from "./colors.js"
+import { colorsExternal } from "./colors.js"
 import { elementosNaoMetal, elementosMetaisTransicao, elementosHalogenios, elementosMetaisAlcalinoTerrosos, elementosLantanideos, elementosGasesNobres, elementosOutrosMetais, elementoSemiMetais, elementosMetaisAlcalinos, elementosActinidios } from "./elements.js"
 
 export const highlightNonMetals = () => {
